@@ -1,0 +1,30 @@
+<script src="./fabric.js"></script>
+<script src="./jquery.3.2.1.min.js"></script>
+<canvas id="canvas" </canvas>
+
+<script>
+let canvas =  new fabric.Canvas("canvas",{
+  width: '1250',
+  height: '800'
+})
+
+let text = new fabric.IText("test msg",{
+  fill : "white",
+  top : 30,
+  left : 590,
+  // text_type : "contents",
+  // textAlign : "center"
+  lockScalingFlip : true,
+})
+console.log(canvas)
+console.log(text)
+
+canvas.add(text);
+
+
+</script>
+<style>
+#canvas {
+  background-color:black;
+}
+</style>
